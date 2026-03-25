@@ -1,0 +1,224 @@
+.kontakt__zaglavlje{
+  text-align:center;
+  margin-bottom: 28px;
+}
+.kontakt__naslov{
+  margin:0 0 8px;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+.kontakt__podnaslov{
+  margin:0;
+  color: var(--muted);
+  max-width: 70ch;
+  margin-inline:auto;
+}
+
+.kontakt__raspored{
+  display:grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.kontakt__sporedno{
+  display:flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.kontakt__kartica{
+  border-radius: 22px;
+  width: 600px;
+  margin-left: 60px;
+}
+
+.kontakt__naslovForme{
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+}
+.kontakt__napomenaForme{
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.kontakt__forma{
+  display:flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.kontakt__red{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.kontakt__polje{
+  display:flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kontakt__polje label{
+  font-weight: 500;
+}
+
+.kontakt__polje input,
+.kontakt__polje textarea,
+.kontakt__polje select{
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg) 85%, white 15%);
+  color: var(--text);
+  outline: none;
+}
+
+.kontakt__polje textarea{ resize: vertical; min-height: 140px; }
+
+.kontakt__polje input:focus,
+.kontakt__polje textarea:focus,
+.kontakt__polje select:focus{
+  box-shadow: 0 0 0 4px rgba(196,123,228,.20);
+  border-color: rgba(196,123,228,.55);
+}
+
+.kontakt__link{
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in oklab, var(--text) 40%, transparent);
+}
+.kontakt__link:hover{
+  text-decoration-color: color-mix(in oklab, var(--text) 70%, transparent);
+}
+
+.kontakt__grupa{
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 12px;
+  background: rgba(255,255,255,.03);
+}
+.kontakt__grupa legend{
+  padding: 0 8px;
+  font-weight: 500;
+}
+
+.kontakt__opcije{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.opcija{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 9px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+.opcija:hover{ transform: translateY(-1px); }
+
+.opcija input{
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: transparent;
+  display:inline-block;
+}
+
+.opcija input:checked{
+  background: linear-gradient(135deg, #C47BE4, color-mix(in oklab, #574964 45%, white));
+  border-color: rgba(196,123,228,.55);
+}
+
+.opcija input:checked + span{
+  font-weight: 600;
+}
+
+.kontakt__provere{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.provera{
+  display:flex;
+  align-items:flex-start;
+  gap: 10px;
+  color: var(--muted);
+}
+.provera input{
+  margin-top: 3px;
+}
+
+.kontakt__dugme{
+  border: none;
+  cursor:pointer;
+  justify-content:center;
+  width:100%;
+}
+
+.kontakt__napomena{
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.kontakt__mapaOkvir{
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.kontakt__mapaOkvir iframe{
+  width: 100%;
+  height: 260px;
+  border: 0;
+  display: block;
+}
+
+.greska-polja{
+  min-height: 18px;
+  display: block;
+  font-size: .9rem;
+  color: #ffb4b4;
+  opacity: .95;
+}
+html[data-theme="light"] .greska-polja{
+  color: #b42318;
+}
+
+.neispravno{
+  border-color: rgba(180,35,24,.75) !important;
+  box-shadow: 0 0 0 4px rgba(180,35,24,.15);
+  background: rgba(255, 248, 248, 0.6);
+}
+
+.neispravno:focus{
+  outline: none;
+  border-color: #b42318;
+  box-shadow: 0 0 0 4px rgba(180,35,24,.18);
+}
+
+input:valid:not(.neispravno),
+select:valid:not(.neispravno){
+  border-color: rgba(46,125,50,.4);
+}
+
+@media (max-width: 900px){
+  .kontakt__raspored{
+    grid-template-columns: 1fr;
+  }
+  .kontakt__red{
+    grid-template-columns: 300px;
+  }
+}

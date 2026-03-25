@@ -1,0 +1,129 @@
+.tura-hero{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.tura-znacka{
+  background: var(--card) !important;
+  color: var(--text) !important;
+}
+
+.sekcija-naslov{
+  margin: 0 0 10px;
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+}
+
+.sekcija-podnaslov{
+  color: var(--muted);
+}
+
+.traka-stavka{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 12px;
+  box-shadow: var(--shadow);
+}
+
+.tura-kartica{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.tura-kartica .card-img-top{
+  height: 220px;
+  object-fit: cover;
+}
+
+.tura-korak{
+  display: inline-block;
+  font-weight: 800;
+  font-size: .85rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.tura-lista{
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.mini-oznaka{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 10px 12px;
+  box-shadow: var(--shadow);
+}
+.mini-etiketa{ font-size: .85rem; color: var(--muted); }
+.mini-vrednost{ font-weight: 800; }
+
+.hero-kolaz{
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-rows: auto auto;
+  gap: 14px;
+}
+.hero-kolaz img{
+  width: 100%;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+.hero-kolaz .k1{ grid-row: span 2; height: 420px; }
+.hero-kolaz .k2{ height: 200px; }
+.hero-kolaz .k3{ height: 200px; }
+
+@media (max-width: 992px){
+  .hero-kolaz .k1{ height: 320px; }
+  .hero-kolaz .k2, .hero-kolaz .k3{ height: 180px; }
+}
+
+
+.accordion-item{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.accordion-button{
+  background: color-mix(in oklab, var(--card) 90%, white 10%);
+  color: var(--text);
+  font-weight: 800;
+}
+.accordion-button:not(.collapsed){
+  background: color-mix(in oklab, var(--card) 85%, #C47BE4 15%);
+  color: var(--text);
+}
+.accordion-body{ color: var(--muted); }
+
+.modal-content{
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+.modal-header{
+  border-bottom: 1px solid var(--border);
+}
+.modal-footer{
+  border-top: 1px solid var(--border);
+}
+
+.tura-poziv{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+.tura-slogan{
+  font-style: italic;
+  opacity: .85;
+}

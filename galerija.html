@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galerija | Taste of Island</title>
+
+  <meta name="description" content="Galerija približava Taste of Island – turističku turu koja spaja lokalnu hranu, prirodu i autentična iskustva." />
+  <meta name="keywords" content="Hvar, Brusje, med, lavanda, maslinovo ulje, degustacija, Napoleon, Stari Grad, privatna tura, Taste of the Island, konoba, liker, medica, Mikletovi, Katja i Aleksa">
+  <meta name="author" content="Taste of the Island">
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/galerija.css" />
+</head>
+
+<button class="tema-fab" type="button" aria-label="Promeni temu" title="Promeni temu">
+  <span class="tema-fab__ikona" aria-hidden="true">🌙</span>
+</button>
+
+<body>
+  <header class="zaglavlje">
+    <div class="kontejner zaglavlje__red">
+      <a class="brend" href="index.html" aria-label="Taste of Island - početna">
+        <img src="assets/icons/logo.svg" alt="Taste of Island logo" width="44" height="44" />
+        <span class="brend__tekst">Taste of Island</span>
+      </a>
+
+      <nav class="navigacija" aria-label="Glavna navigacija">
+
+        <button class="navigacija__prekidac" type="button" aria-expanded="false" aria-controls="navMenu">
+          ☰
+          <span class="samo-za-ekran">Otvori meni</span>
+        </button>
+
+        <ul class="navigacija__meni" id="navMenu">
+          <li><a class="navigacija__link" href="index.html">Početna</a></li>
+
+          <li class="navigacija__padajuci">
+            <button class="navigacija__link navigacija__dugme" type="button" aria-expanded="false">
+              O nama ▾
+            </button>
+            <ul class="navigacija__padajuciMeni">
+              <li><a class="navigacija__link" href="tura.html">Tura</a></li>
+              <li><a class="navigacija__link" href="domacini.html">Domaćini</a></li>
+              <li><a class="navigacija__link" href="proizvodi.html">Proizvodi</a></li>
+            </ul>
+          </li>
+
+          <li><a class="navigacija__link is-active" href="galerija.html">Galerija</a></li>
+          <li><a class="navigacija__link" href="kontakt.html">Kontakt</a></li>
+
+          <li class="nav__controls">
+            <button id="fontBtn" class="dugme dugme--providno" type="button">Povećaj font</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+  <div class="kontejner">
+
+      <section class="galerija-hero reveal">
+        <h1>Galerija</h1>
+        <p class="section-subtitle">Trenuci koji mirišu na Hvar.</p>
+      </section>
+
+      <section class="section">
+        <div class="gal-topbar reveal">
+          <div>
+            <h2 class="h2">Fotografije sa ture</h2>
+          </div>
+
+      <div class="filteri-galerije">
+        <button class="dugme dugme--providno is-active" type="button" data-filter="all">Sve</button>
+        <button class="dugme dugme--providno" type="button" data-filter="tura">Tura</button>
+        <button class="dugme dugme--providno" type="button" data-filter="porodica">Porodica</button>
+        <button class="dugme dugme--providno" type="button" data-filter="proizvodi">Proizvodi</button>
+        <button class="dugme dugme--providno" type="button" data-filter="lavanda">Lavanda</button>
+      </div>
+
+        <div id="mrezaGalerije" class="galerija-mreza"></div>
+        <p id="porukaGalerije" class="gal-msg" aria-live="polite"></p>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="svetlosni-okvir" data-lightbox aria-hidden="true">
+    <button class="svetlosni-okvir__zatvori" type="button" aria-label="Zatvori" data-lb-close>✕</button>
+    <div class="svetlosni-okvir__pozadina" data-lb-close></div>
+
+    <div class="svetlosni-okvir__panel" role="dialog" aria-modal="true" aria-label="Pregled slike u punom ekranu">
+      <button class="svetlosni-okvir__navigacija svetlosni-okvir__navigacija--prethodno" type="button" aria-label="Prethodna" data-lb-prev>‹</button>
+
+      <figure class="svetlosni-okvir__figura">
+        <img class="svetlosni-okvir__slika" data-lb-img alt="">
+        <figcaption class="svetlosni-okvir__opis" data-lb-cap></figcaption>
+      </figure>
+
+      <button class="svetlosni-okvir__navigacija svetlosni-okvir__navigacija--sledece" type="button" aria-label="Sledeća" data-lb-next>›</button>
+    </div>
+  </div>
+
+  <script src="js/theme-fab.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/galerija-ajax.js" defer></script>
+  <script src="js/galerija-lightbox.js" defer></script>
+</body>
+</html>
+
+
+
+

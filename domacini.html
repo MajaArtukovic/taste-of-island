@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Domaćini | Taste of Island</title>
+
+  <meta name="description" content="Katja i Aleksa će se potruditi da doživite potpuni Taste of Island ostrva Hvar" />
+  <meta name="keywords" content="Hvar, Brusje, med, lavanda, maslinovo ulje, degustacija, Napoleon, Stari Grad, privatna tura, Taste of the Island, honeytasting, konoba, liker, medica, Mikletovi, Katja i Aleksa">
+  <meta name="author" content="Taste of the Island">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/domacini.css">
+</head>
+
+<body>
+  <button class="tema-fab" type="button" aria-label="Promeni temu" title="Promeni temu">
+    <span class="tema-fab__ikona" aria-hidden="true">🌙</span>
+  </button>
+
+  <header class="zaglavlje">
+    <div class="kontejner zaglavlje__red">
+      <a class="brend" href="index.html" aria-label="Taste of Island - početna">
+        <img src="assets/icons/logo.svg" alt="Taste of Island logo" width="44" height="44" />
+        <span class="brend__tekst">Taste of Island</span>
+      </a>
+
+      <nav class="navigacija" aria-label="Glavna navigacija">
+        <button class="navigacija__prekidac" type="button" aria-expanded="false" aria-controls="navMenu">
+          ☰ <span class="samo-za-ekran">Otvori meni</span>
+        </button>
+
+        <ul class="navigacija__meni" id="navMenu">
+          <li><a class="navigacija__link" href="index.html">Početna</a></li>
+
+          <li class="navigacija__padajuci">
+            <button class="navigacija__link navigacija__dugme" type="button" aria-expanded="false">
+              O nama ▾
+            </button>
+            <ul class="navigacija__padajuciMeni">
+              <li><a class="navigacija__link" href="tura.html">Tura</a></li>
+              <li><a class="navigacija__link is-active" href="domacini.html">Domaćini</a></li>
+              <li><a class="navigacija__link" href="proizvodi.html">Proizvodi</a></li>
+            </ul>
+          </li>
+
+          <li><a class="navigacija__link" href="galerija.html">Galerija</a></li>
+          <li><a class="navigacija__link" href="kontakt.html">Kontakt</a></li>
+
+          <li class="nav__controls">
+            <button id="fontBtn" class="dugme dugme--providno" type="button">Povećaj font</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <header class="domacini-hero">
+    <div class="kontejner">
+      <div class="domacini-hero__mreza">
+        <div class="otkrivanje">
+          <span class="pilula">Porodica • tradicija • toplina</span>
+          <h1 class="naslov1">Domaćini koji vas dočekuju kao svoje</h1>
+          <p class="uvodni-tekst">
+            Katja i Aleksa nisu “vodiči po šablonu”. Oni su domaćini.
+            Njihova kuća u Brusju i konoba Mikletovi čuvaju priče, mirise i ukuse Hvara
+            generacijama — i upravo to želite da ponesete sa sobom.
+          </p>
+
+          <div class="statistika">
+            <div class="stat">
+              <span class="stat__broj">100+</span>
+              <span class="stat__tekst">godina tradicije</span>
+            </div>
+            <div class="stat">
+              <span class="stat__broj">40+</span>
+              <span class="stat__tekst">godina pčelarstva</span>
+            </div>
+            <div class="stat">
+              <span class="stat__broj">1</span>
+              <span class="stat__tekst">autentična konoba</span>
+            </div>
+          </div>
+
+          <div class="dugmad-red">
+            <a class="dugme" href="#prica">Njihova priča</a>
+            <a class="dugme dugme-kontura" href="#konoba">Konoba Mikletovi</a>
+          </div>
+        </div>
+
+        <div class="otkrivanje">
+          <div class="raspored-slika">
+            <figure class="foto foto--velika">
+              <img src="assets/img/katja-i-aleksa.webp" alt="Katja i Aleksa">
+            </figure>
+            <figure class="foto">
+              <img src="assets/img/nove-slike.jpg" alt="Porodica i tradicija">
+            </figure>
+            <figure class="foto">
+              <img src="assets/img/pcelarsko-odelo.jpg" alt="Brusje, kamena kuća">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="glavni">
+    <div class="kontejner">
+
+      <section id="prica" class="sekcija">
+        <div class="sekcija__zaglavlje otkrivanje">
+          <h2 class="naslov2">Lična priča i poreklo</h2>
+          <p class="podtekst">
+            Ovo nije “projekat”. Ovo je način života — nekada potreba, danas i ponos.
+          </p>
+        </div>
+
+        <div class="prica-mreza">
+          <div class="kartica otkrivanje">
+            <h3 class="naslov3">Tradicija starija od posla</h3>
+            <p>
+              U našoj porodici tradicija pčela i lavande traje više od 100 godina.
+              Nekada to nije bio posao, već život: ono što se pravilo koristilo se u kući,
+              delilo sa komšijama i čuvalo kao blago.
+            </p>
+            <p>
+              Danas smo srećni što isti taj užitak može da postane deo uspomena i vaših dana na Hvaru.
+            </p>
+          </div>
+
+          <div class="kartica otkrivanje">
+            <h3 class="naslov3">Kako je Katja učila</h3>
+            <p>
+              Katja je najviše učila od oca i none. Sa 13 godina već je prodavala proizvode na malom gradskom štandu,
+              a kroz godine je sve više ulazila u proces proizvodnje — od sirovine do poslednje etikete.
+            </p>
+            <p>
+              Danas želi da ta znanja prenese dalje, baš zato što komercijalizacija gura ručni rad u stranu.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="konoba" class="sekcija">
+        <div class="dve-kolone">
+          <div class="otkrivanje">
+            <h2 class="naslov2">Konoba Mikletovi</h2>
+            <p class="podtekst">
+              Degustaciona sala u kamenoj kući staroj više od jednog veka — prostor koji miriše na prošlost,
+              ali je živ kroz ljude.
+            </p>
+
+            <div class="kartica-stavki">
+              <ul class="stavke">
+                <li>Autentičan enterijer i porodične fotografije</li>
+                <li>Upoznajete domaćine — bez “turističke distance”</li>
+                <li>Priče o pčelama, lavandi i životu “kako je bilo nekad”</li>
+                <li>Topao doček i iskren oproštaj (da, i zagrljaji)</li>
+              </ul>
+            </div>
+
+            <div class="utisak otkrivanje">
+              I’d recommend this to anyone. Especially the winery he will recommend. Very much worth the money and time.
+              Truly enjoyed the winery, honey tasting, plus the drives through the lavender fields! 10/10!
+              <br>
+              <strong>— Google review, ⭐⭐⭐⭐⭐ 2024</strong>
+            </div>
+          </div>
+
+          <div class="otkrivanje">
+            <video width="100%" height="600" autoplay muted loop playsinline>
+              <source src="assets/img/konoba-video.mp4" type="video/mp4">
+              Vaš pretraživač ne podržava video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="sekcija">
+        <div class="sekcija__zaglavlje otkrivanje">
+          <h2 class="naslov2">Šta gosti najviše pamte</h2>
+          <p class="podtekst">
+            To nisu samo mesta — to je osećaj: iznenađenje, mir, i ono “kako je nekad bilo”.
+          </p>
+        </div>
+
+        <div class="uspomene-mreza">
+          <div class="uspomena otkrivanje">
+            <h3 class="naslov3">Pogled koji oduzima dah</h3>
+            <p>Napoleonova tvrđava i panorama Hvara su trenutak koji “zakuca” početak ture.</p>
+          </div>
+          <div class="uspomena otkrivanje">
+            <h3 class="naslov3">Ručna proizvodnja</h3>
+            <p>Gostima je neverovatno kad shvate koliko se toga još uvek radi ručno — sa merom, pažnjom, bez fabrike.</p>
+          </div>
+          <div class="uspomena otkrivanje">
+            <h3 class="naslov3">Stari Grad smiruje</h3>
+            <p>Posle Hvarske gužve, Stari Grad dođe kao predah — lagana šetnja, tišina i kamen.</p>
+          </div>
+          <div class="uspomena otkrivanje">
+            <h3 class="naslov3">Zagrljaj na kraju</h3>
+            <p>Da, baš to. Onaj osećaj da si bio gost kod nekog svog, a ne “klijent”.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="poziv-na-akciju otkrivanje">
+        <div>
+          <h2 class="naslov2">Spremni za susret sa autentičnim Hvarom?</h2>
+          <p class="podtekst">Ako vam ova priča već greje stomak — na turi će biti još lepše.</p>
+        </div>
+        <a class="dugme dugme-tamno" href="tura.html#reserve">Rezerviši turu</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="podnozje">
+    <div class="kontejner podnozje__red">
+      <span>“…tako je to nekad bilo”</span>
+      <p>© <span id="year"></span> Taste of Island</p>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </footer>
+
+  <script src="js/theme-fab.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

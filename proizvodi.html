@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proizvodi | Taste of the Island</title>
+
+  <meta name="description" content="Pogledajte sve Taste of Island proizvode i usluge u kojima možete uživati na turi, a neke poneti i sa sobom" />
+  <meta name="keywords" content="Hvar, Brusje, med, lavanda, maslinovo ulje, degustacija, Napoleon, Stari Grad
+  privatna tura, Taste of the Island, honeytasting, konoba, liker, medica, Mikletovi, Katja i Aleksa">
+  <meta name="author" content="Taste of the Island">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/proizvodi.css">
+</head>
+
+<body>
+
+<button class="tema-fab" type="button" aria-label="Promeni temu" title="Promeni temu">
+  <span class="tema-fab__ikona" aria-hidden="true">🌙</span>
+</button>
+
+  <header class="zaglavlje">
+    <div class="kontejner zaglavlje__red">
+      <a class="brend" href="index.html" aria-label="Taste of Island - početna">
+        <img src="assets/icons/logo.svg" alt="Taste of Island logo" width="44" height="44" />
+        <span class="brend__tekst">Taste of Island</span>
+      </a>
+
+      <nav class="navigacija" aria-label="Glavna navigacija">
+
+        <button class="navigacija__prekidac" type="button" aria-expanded="false" aria-controls="navMenu">
+          ☰
+          <span class="samo-za-ekran">Otvori meni</span>
+        </button>
+
+        <ul class="navigacija__meni" id="navMenu">
+          <li><a class="navigacija__link" href="index.html">Početna</a></li>
+
+          <li class="navigacija__padajuci">
+            <button class="navigacija__link navigacija__dugme" type="button" aria-expanded="false">
+              O nama ▾
+            </button>
+            <ul class="navigacija__padajuciMeni">
+              <li><a class="navigacija__link" href="tura.html">Tura</a></li>
+              <li><a class="navigacija__link" href="domacini.html">Domaćini</a></li>
+              <li><a class="navigacija__link is-active" href="proizvodi.html">Proizvodi</a></li>
+            </ul>
+          </li>
+
+          <li><a class="navigacija__link" href="galerija.html">Galerija</a></li>
+          <li><a class="navigacija__link" href="kontakt.html">Kontakt</a></li>
+
+          <li class="nav__controls">
+            <button id="fontBtn" class="dugme dugme--providno" type="button">Povećaj font</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <header class="proizvodi-hero">
+    <div class="kontejner proizvodi-hero__mreza">
+      <div class="otkrivanje">
+        <span class="proizvodi-pilula">Domaće • Ručno • Prirodno</span>
+        <h1 class="proizvodi-naslov">Proizvodi koji mirišu na Hvar</h1>
+        <p class="proizvodi-uvod">
+          Sve što ovde vidite nastaje polako, pažljivo i ručno — bez fabrike i bez žurbe.
+          Med, lavanda, maslinovo ulje, domaći likeri i vino… i ona mala posluženja
+          koja upotpune trenutak: sušene smokve i ušećereni bademi.
+        </p>
+
+        <div class="proizvodi-poziv">
+          <a class="dugme" href="#honey">Med & pčelinji proizvodi</a>
+          <a class="dugme dugme-kontura" href="#olive">Maslinovo ulje</a>
+        </div>
+      </div>
+
+      <div class="otkrivanje">
+        <div class="mozaik">
+          <img class="m1" src="assets/img/berba2.jpg" alt="Berba maslina">
+          <img class="m2" src="assets/img/med.jpg" alt="Med">
+          <img class="m3" src="assets/img/sace.jpg" alt="Saće">
+          <img class="m4" src="assets/img/lavanda-vrecice.jpg" alt="Lavanda proizvodi">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="sekcija">
+    <div class="kontejner">
+
+      <section class="sekcija otkrivanje">
+        <h2>Šta sve možete probati (i poneti kući)</h2>
+        <p>
+          Proizvodi se menjaju kroz sezonu, ali jedno ostaje isto:
+          ručni rad, prirodni sastojci i autentični ukus ostrva.
+        </p>
+
+        <div class="grid proizvodi-mreza">
+          <article class="kartica">
+            <h3> Med</h3>
+            <p>Lavanda, vrijesak, planika i još mnogo sezonskih vrsta.</p>
+          </article>
+          <article class="kartica">
+            <h3> Maslinovo ulje</h3>
+            <p>Extra devičansko, devičansko, hladno ceđeno + ulje sa limunom.</p>
+          </article>
+          <article class="kartica">
+            <h3> Lavanda</h3>
+            <p>Ulje, sušene kesice, sapun od lavande i poklon pakovanja.</p>
+          </article>
+          <article class="kartica">
+            <h3> Belo vino</h3>
+            <p>Lokalno, pitko, savršeno uz degustaciju i letnje večeri.</p>
+          </article>
+          <article class="kartica">
+            <h3> Domaći likeri</h3>
+            <p>Medica, mirta, rogač, travarica — sve domaće, ručno rađeno.</p>
+          </article>
+          <article class="kartica">
+            <h3> Posluženja</h3>
+            <p>Sušene smokve, ušećereni bademi, kandirani citrusi.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="honey" class="sekcija">
+        <div class="podeljeno">
+          <div class="otkrivanje">
+            <h2>Med & pčelinji proizvodi</h2>
+            <p>
+              Med nije “samo sladak”. Kod nas svaki med ima priču o biljci, sezoni i mestu.
+              Pčele prate cvetanje, a med dobija svoj naziv tek kada prođe stručnu analizu
+              (da se potvrdi poreklo i dominantna biljka).
+            </p>
+
+            <div class="kartica napomena">
+              <h3>Vrste meda (primeri)</h3>
+              <p>
+                Lavanda • vrijesak • planika • kadulja • ruzmarin… (zavisno od sezone).
+                Zato degustacija nikad nije ista — svaki put je posebna.
+              </p>
+            </div>
+
+            <div class="kartica napomena">
+              <h3>Saće</h3>
+              <p>
+                Saće je ono što gosti najčešće pamte: čisti miris košnice, tekstura i osećaj
+                da probaju nešto “baš kako jeste”. Uz to, tu je i polen (cvetni prah),
+                prirodan i snažan dodatak ishrani.
+              </p>
+            </div>
+          </div>
+
+          <div class="otkrivanje">
+            <div class="galerija-2">
+              <figure class="snimak">
+                <img src="assets/img/med-teglice.jpg" alt="Tegle meda">
+                <figcaption>Više veličina i pakovanja</figcaption>
+              </figure>
+              <figure class="snimak">
+                <img src="assets/img/sace2.webp" alt="Saće">
+                <figcaption>Saće — prirodno, bez “filtera”</figcaption>
+              </figure>
+            </div>
+
+            <div class="galerija-1">
+              <figure class="snimak">
+                <img src="assets/img/mala-pakovanja.jpg" alt="Mala pakovanja">
+                <figcaption>Mala pakovanja — savršen suvenir</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="olive" class="sekcija">
+        <div class="podeljeno podeljeno--obrnuto">
+          <div class="otkrivanje">
+            <h2>Maslinovo ulje</h2>
+            <p>
+              Masline se beru ručno, a ulje se čuva kao zlato.
+              U našem kraju često se razlikuju i “nekad” i “sad”:
+              ranije se ulje koristilo i nakon više meseci, dok se danas sve više ceni
+              sveže, mirisno, hladno ceđeno ulje.
+            </p>
+
+            <div class="kartica napomena">
+              <h3>Koja je razlika između extra devičanskog i devičanskog?</h3>
+              <p>
+                <strong>Extra devičansko maslinovo ulje</strong> je najviša kategorija:
+                dobija se mehanički (bez hemije), ima najnižu kiselost i najčistiji ukus i miris.
+                <br><br>
+                <strong>Devičansko maslinovo ulje</strong> je takođe dobijeno mehanički,
+                ali može imati nešto višu kiselost i blaži profil — i dalje je kvalitetno,
+                samo korak ispod “extra” nivoa.
+              </p>
+            </div>
+
+            <div class="kartica napomena">
+              <h3>Hladno ceđeno?</h3>
+              <p>
+                “Hladno ceđeno” znači da se ulje dobija pri nižim temperaturama,
+                kako bi se sačuvali mirisi, ukus i korisne materije.
+                To je razlog zašto hladno ceđeno ulje često ima življi, “zeleniji” karakter.
+              </p>
+            </div>
+
+            <div class="kartica napomena">
+              <h3>Ulje sa limunom</h3>
+              <p>
+                Imamo i maslinovo ulje sa limunom — idealno za ribu, salate i lagana letnja jela.
+                Miris je čist, a ukus svež, kao Hvar u zalogaju.
+              </p>
+            </div>
+          </div>
+
+          <div class="otkrivanje">
+            <div class="galerija-2">
+              <figure class="snimak">
+                <img src="assets/img/berba1.jpg" alt="Berba maslina">
+                <figcaption>Ručna berba maslina</figcaption>
+              </figure>
+              <figure class="snimak">
+                <img src="assets/img/maslinovo-ulje.jpg" alt="Maslinovo ulje">
+                <figcaption>Ulje — ukus i miris ostrva</figcaption>
+              </figure>
+            </div>
+
+            <div class="galerija-1">
+              <figure class="snimak">
+                <img src="assets/img/proizvodi.jpeg" alt="Proizvodi">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lavender" class="sekcija">
+        <div class="podeljeno">
+          <div class="otkrivanje">
+            <h2>Lavanda</h2>
+            <p>
+              Lavanda je simbol Hvara, ali malo ko zna koliko je ručnog rada iza tog mirisa.
+              Polja su neravna, zato se lavanda bere ručno — srpom, uz suhozide i kamen.
+              Destilacija ulja je poseban ritual, a gosti najčešće ostanu očarani tim “sporim” procesom.
+            </p>
+
+            <div class="kartica napomena">
+              <h3>Šta sve pravimo od lavande?</h3>
+              <p>
+                Eterično ulje • sapun od lavande • sušene kesice lavande • sušeni cvet u poklon pakovanjima.
+                Sve miriše nežno i prirodno — bez agresivnih veštačkih mirisa.
+              </p>
+            </div>
+          </div>
+
+          <div class="otkrivanje">
+            <div class="galerija-2">
+              <figure class="snimak">
+                <img src="assets/img/lavanda-ulje.jpg" alt="Ulje lavande">
+                <figcaption>Ulje lavande</figcaption>
+              </figure>
+              <figure class="snimak">
+                <img src="assets/img/korpice.jpg" alt="Lavanda proizvodi">
+                <figcaption>Ulje • kesice • sapun</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="drinks" class="sekcija">
+        <div class="podeljeno podeljeno--obrnuto">
+          <div class="otkrivanje">
+            <h2>Belo vino & domaći likeri</h2>
+            <p>
+              Uz degustaciju ide i čaša lokalnog belog vina — lagano, osvežavajuće,
+              stvoreno za letnje dane. A za one koji vole jači “potpis” ostrva,
+              tu su domaći likeri i rakije.
+            </p>
+
+            <div class="grid mini-mreza">
+              <div class="kartica">
+                <h3> Belo vino</h3>
+                <p>Lokalno, pitko, idealno uz maslinovo ulje i med.</p>
+              </div>
+              <div class="kartica">
+                <h3> Medica</h3>
+                <p>Liker od meda — topao, aromatičan, domaći.</p>
+              </div>
+              <div class="kartica">
+                <h3> Mirta & rogač</h3>
+                <p>Duboke mediteranske arome koje se pamte.</p>
+              </div>
+              <div class="kartica">
+                <h3> Travarica</h3>
+                <p>Biljke ostrva u jednoj čašici — ručno pripremano.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="otkrivanje">
+            <div class="galerija-2">
+              <figure class="snimak">
+                <img src="assets/img/vino.jpg" alt="Belo vino">
+                <figcaption>Belo vino</figcaption>
+              </figure>
+              <figure class="snimak">
+                <img src="assets/img/rakije.jpg" alt="Domaći likeri">
+                <figcaption>Domaći likeri (med, mirta, rogač, bilje)</figcaption>
+              </figure>
+            </div>
+
+            <div class="galerija-1">
+              <figure class="snimak">
+                <img src="assets/img/berba3.jpeg" alt="Berba grožđa">
+                <figcaption>Ručna berba grožđa</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="serving" class="sekcija otkrivanje">
+        <h2>Mala posluženja koja čine razliku</h2>
+        <p>
+          Nije sve u “velikim proizvodima”. Nekad baš sitnice ostanu u sećanju:
+          domaće sušene smokve, ušećereni bademi, kandirani citrusi…
+          To je ona toplina doma koja zaokruži degustaciju.
+        </p>
+
+        <div class="grid proizvodi-mreza">
+          <article class="kartica">
+            <h3>Sušene smokve</h3>
+            <p>Domaće, prirodno sušene, savršen par uz liker i med.</p>
+          </article>
+          <article class="kartica">
+            <h3>Ušećereni bademi</h3>
+            <p>Hrskavo, slatko, mirisno — kao mali festival ukusa.</p>
+          </article>
+          <article class="kartica">
+            <h3>Korpice & mala pakovanja</h3>
+            <p>Poklon pakovanja koja gosti rado nose kući — miris Hvara u torbi.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sekcija otkrivanje">
+        <div class="proizvodi-poziv-kutija">
+          <div>
+            <h2>Želite da probate sve ovo uživo?</h2>
+            <p>Na turi ne gledate proizvode kroz izlog — vi ih doživite, pomirišete i probate.</p>
+          </div>
+          <a class="dugme dugme-tamno" href="tura.html#reserve">Rezerviši turu</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="podnozje">
+    <div class="kontejner podnozje__red">
+      <span>“…tako je to nekad bilo”</span>
+      <p>© <span id="year"></span> Taste of Island</p>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </footer>
+
+  <script src="js/theme-fab.js"></script>
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>

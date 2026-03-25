@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="sr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktirajte nas za više informacija o Taste of Island turi, odgovorićemo na sva Vaša pitanja" />
+  <meta name="keywords" content="Hvar, Brusje, med, lavanda, maslinovo ulje, degustacija, Napoleon, Stari Grad
+  privatna tura, Taste of the Island, honeytasting, konoba, liker, medica, Mikletovi, Katja i Aleksa">
+  <meta name="author" content="Taste of the Island">
+  
+  <title>Kontakt | Taste of Island</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/kontakt.css">
+</head>
+
+<body>
+
+<button class="tema-fab" type="button" aria-label="Promeni temu" title="Promeni temu">
+  <span class="tema-fab__ikona" aria-hidden="true">🌙</span>
+</button>
+
+  <header class="zaglavlje">
+    <div class="kontejner zaglavlje__red">
+      <a class="brend" href="index.html" aria-label="Taste of Island - početna">
+        <img src="assets/icons/logo.svg" alt="Taste of Island logo" width="44" height="44" />
+        <span class="brend__tekst">Taste of Island</span>
+      </a>
+
+      <nav class="navigacija" aria-label="Glavna navigacija">
+
+        <button class="navigacija__prekidac" type="button" aria-expanded="false" aria-controls="navMenu">
+          ☰
+          <span class="samo-za-ekran">Otvori meni</span>
+        </button>
+
+        <ul class="navigacija__meni" id="navMenu">
+          <li><a class="navigacija__link" href="index.html">Početna</a></li>
+
+          <li class="navigacija__padajuci">
+            <button class="navigacija__link navigacija__dugme" type="button" aria-expanded="false">
+              O nama ▾
+            </button>
+            <ul class="navigacija__padajuciMeni">
+              <li><a class="navigacija__link" href="tura.html">Tura</a></li>
+              <li><a class="navigacija__link" href="domacini.html">Domaćini</a></li>
+              <li><a class="navigacija__link" href="proizvodi.html">Proizvodi</a></li>
+            </ul>
+          </li>
+
+          <li><a class="navigacija__link" href="galerija.html">Galerija</a></li>
+          <li><a class="navigacija__link is-active" href="kontakt.html">Kontakt</a></li>
+
+          <li class="nav__controls">
+            <button id="fontBtn" class="dugme dugme--providno" type="button">Povećaj font</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="sekcija kontakt">
+      <div class="kontejner">
+
+        <header class="kontakt__zaglavlje">
+          <h1 class="kontakt__naslov">Kontaktirajte nas</h1>
+          <p class="kontakt__podnaslov">
+            Tu smo da odgovorimo na sva pitanja i da zajedno isplaniramo turu koja miriše na Hvar.
+          </p>
+        </header>
+
+        <div class="kontakt__raspored">
+          <aside class="kontakt__sporedno">
+            <div class="kartica otkrivanje is-visible">
+              <h3>Naša lokacija 📌</h3>
+              <p> Veljka Kovačevića 31,<br>21450 Hvar</p>
+            </div>
+
+            <div class="kartica contact__map">
+              <h3>Mapa</h3>
+              <div class="kontakt__mapaOkvir">
+                <iframe
+                  title="Taste of Island — lokacija Hvar"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=Veljka%20Kova%C4%8Devi%C4%87a%2031,%2021450%20Hvar&output=embed">
+                </iframe>
+              </div>
+            </div>
+
+            <div class="kartica otkrivanje is-visible">
+              <h3>Pišite nam 📩</h3>
+              <p>
+                Email:
+                <a class="kontakt__link" href="mailto:aleksandarbalazinec@yahoo.com">aleksandarbalazinec@yahoo.com</a><br>
+                Telefon:
+                <a class="kontakt__link" href="tel:+385921466421">+385 92 146 6421</a><br>
+                Instagram:
+                <a class="kontakt__link" href="https://www.instagram.com/mikletovi/" target="_blank">@mikletovi</a>
+              </p>
+            </div>
+
+            <div class="kartica otkrivanje is-visible">
+              <h3>Radno vreme 💼</h3>
+              <p>Pon - Pet: 09:00 - 17:00<br>Vikendom: Zatvoreno</p>
+            </div>
+
+            <div class="kartica contact__note">
+              <h3>Brz odgovor ⏳</h3>
+              <p>
+                Najčešće odgovaramo u roku od 24h radnim danima.
+                Ako je hitno, pozovite nas.
+              </p>
+            </div>
+          </aside>
+
+          <div class="kartica kontakt__kartica">
+            <h2 class="kontakt__naslovForme">Pošaljite upit</h2>
+            <p class="kontakt__napomenaForme">Recite nam par detalja — mi ćemo predložiti najbolju turu.</p>
+
+            <form class="kontakt__forma" action="#" method="post" autocomplete="on" novalidate>
+              <div class="kontakt__red">
+                <div class="kontakt__polje">
+                  <label for="name">Ime i prezime *</label>
+                  <input type="text" id="name" name="name" placeholder="Petar Petrović" required>
+                  <div class="greska-polja" data-error-for="name"></div>
+                </div>
+
+                <div class="kontakt__polje">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" placeholder="user@gmail.com" required>
+                  <div class="greska-polja" data-error-for="email"></div>  
+                </div>
+              </div>
+
+              <div class="kontakt__red">
+                <div class="kontakt__polje">
+                  <label for="phone">Telefon (opciono)</label>
+                  <input type="tel" id="phone" name="phone">
+                  <div class="greska-polja" data-error-for="phone"></div>
+                </div>
+
+                <div class="kontakt__polje">
+                  <label for="date">Željeni datum</label>
+                  <input type="date" id="date" name="date">
+                  <div class="greska-polja" data-error-for="date"></div>
+                </div>
+              </div>
+
+              <div class="kontakt__red">
+                <div class="kontakt__polje">
+                  <label for="people">Broj osoba</label>
+                  <input type="number" id="people" name="people" min="1" max="8" placeholder="1-8">
+                  <div class="greska-polja" data-error-for="people"></div>  
+                </div>
+
+                <div class="kontakt__polje">
+                  <label for="budget">Budžet po osobi</label>
+                  <select id="budget" name="budget">
+                    <option value="" selected>Odaberite</option>
+                    <option value="do150">do 50€</option>
+                    <option value="150-300">50–100€</option>
+                    <option value="300plus">100€+</option>
+                  </select>
+                  <div class="greska-polja" data-error-for="budget"></div>  
+                </div>
+              </div>
+
+              <fieldset class="kontakt__grupa">
+                <legend>Interesovanja (izaberite više)</legend>
+
+                <div class="kontakt__opcije">
+                  <label class="opcija">
+                    <input type="checkbox" name="interests" value="gastronomija">
+                    <span>Gastronomija</span>
+                  </label>
+
+                  <label class="opcija">
+                    <input type="checkbox" name="interests" value="vino">
+                    <span>Vino</span>
+                  </label>
+
+                  <label class="opcija">
+                    <input type="checkbox" name="interests" value="priroda">
+                    <span>Priroda</span>
+                  </label>
+
+                  <label class="opcija">
+                    <input type="checkbox" name="interests" value="kultura">
+                    <span>Kultura</span>
+                  </label>
+
+                  <label class="opcija">
+                    <input type="checkbox" name="interests" value="plaze">
+                    <span>Plaže</span>
+                  </label>
+
+                  <label class="opcija">
+                    <input type="checkbox" name="interests" value="porodicno">
+                    <span>Porodično</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="greska-polja" data-error-for="interests"></div>
+
+              <div class="kontakt__polje">
+                <label for="message">Poruka</label>
+                <textarea id="message" name="message" rows="5" placeholder="Napišite šta biste voleli (mesto, tempo, posebne želje)..."></textarea>
+                <div class="greska-polja" data-error-for="message"></div>
+              </div>
+
+
+              <div class="kontakt__provere">
+                <label class="provera">
+                  <input type="checkbox" name="consent" required>
+                  <span>Slažem se da me kontaktirate u vezi upita (obavezno).</span>
+                </label>
+                <div class="greska-polja" data-error-for="consent"></div>
+              </div>
+
+              <button type="submit" class="dugme kontakt__dugme">Pošalji upit</button>
+
+              <p class="kontakt__napomena">
+                Slanjem forme potvrđujete da su podaci tačni. Ne delimo podatke sa trećim licima.
+              </p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="podnozje">
+    <div class="kontejner podnozje__red">
+      <span>“…tako je to nekad bilo”</span>
+      <p>© <span id="year"></span> Taste of Island</p>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </footer>
+
+  <script src="js/theme-fab.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/contact-validate.js"></script>
+</body>
+</html>

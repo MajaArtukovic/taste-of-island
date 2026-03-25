@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Taste of Island | Turistička tura</title>
+  <meta name="description" content="Taste of Island je turistička tura koja spaja lokalnu hranu, prirodu i autentična iskustva. Pogledaj programe i rezerviši svoje mesto." />
+  <meta name="keywords" content="Hvar, Brusje, med, lavanda, maslinovo ulje, degustacija, Napoleon, Stari Grad
+  privatna tura, Taste of the Island, honeytasting, konoba, liker, medica, Mikletovi, Katja i Aleksa">
+  <meta name="author" content="Taste of the Island">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/index-kartice.css" />
+
+  <meta property="og:title" content="Taste of Island | Turistička tura" />
+  <meta property="og:description" content="Autentična tura: ukusi, priroda, kultura i more." />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+  <button class="tema-fab" type="button" aria-label="Promeni temu" title="Promeni temu">
+     <span class="tema-fab__ikona" aria-hidden="true">🌙</span>
+  </button>
+
+  <header class="zaglavlje">
+    <div class="kontejner zaglavlje__red">
+      <a class="brend" href="index.html" aria-label="Taste of Island - početna">
+        <img src="assets/icons/logo.svg" alt="Taste of Island logo" width="44" height="44" />
+        <span class="brend__tekst">Taste of Island</span>
+      </a>
+
+      <nav class="navigacija" aria-label="Glavna navigacija">
+
+        <button class="navigacija__prekidac" type="button" aria-expanded="false" aria-controls="navMenu">
+          ☰
+          <span class="samo-za-ekran">Otvori meni</span>
+        </button>
+
+        <ul class="navigacija__meni" id="navMenu">
+          <li><a class="navigacija__link is-active" href="index.html">Početna</a></li>
+
+          <li class="navigacija__padajuci">
+            <button class="navigacija__link navigacija__dugme" type="button" aria-expanded="false">
+              O nama ▾
+            </button>
+            <ul class="navigacija__padajuciMeni">
+              <li><a class="navigacija__link" href="tura.html">Tura</a></li>
+              <li><a class="navigacija__link" href="domacini.html">Domaćini</a></li>
+              <li><a class="navigacija__link" href="proizvodi.html">Proizvodi</a></li>
+            </ul>
+          </li>
+
+          <li><a class="navigacija__link" href="galerija.html">Galerija</a></li>
+          <li><a class="navigacija__link" href="kontakt.html">Kontakt</a></li>
+
+          <li class="nav__controls">
+            <button id="fontBtn" class="dugme dugme--providno" type="button">Povećaj font</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="kontejner">
+        <div class="slajder" data-slider>
+          <div class="slider__track">
+            <article class="slajd is-active">
+              <img src="assets/img/lavanda-cover.jpeg" alt="Pogled na obalu i more u zlatnom satu" />
+              <div class="slajd__prekrivac">
+                <h1 style="padding-left: 50px;">Dobrodošli u svet mirisa, ukusa i tradicije ostrva Hvar</h1>
+               <a class="dugme" href="tura.html" style="display: block; width: 300px; margin: 0 auto; text-align: center;">
+                  Pogledaj ture
+               </a>
+              </div>
+            </article>
+
+            <article class="slajd">
+              <img src="assets/img/proizvodi.jpeg" alt="Lokalni specijaliteti na drvenom stolu" />
+              <div class="slajd__prekrivac">
+                <h2>Degustacije i lokalni proizvodi</h2>
+                <p>Autentična porodična tura sa Katjom i Aleksom – med, lavanda i emocija</p>
+              </div>
+            </article>
+
+            <article class="slajd">
+              <img src="assets/img/tura.jpeg" alt="Grupa turista na vidikovcu" />
+              <div class="slajd__prekrivac">
+                <h2 style="padding-left: 50px;">Individualan program prilagođen tebi</h2>
+                <p>Dan ispunjen zlatnim suncem, mirisom lavande i ukusom domaćeg meda. 
+                  Tura Taste of Island vodi Vas kroz srce ostrva Hvara, do sela Brusje, gde vas dočekuju Katja i Aleksa – čuvari porodične tradicije pčelarstva, lavande i domaćih rakija.</p>
+              </div>
+            </article>
+          </div>
+
+          <button class="slajder__dugme slajder__dugme--prethodno" type="button" aria-label="Prethodna slika">‹</button>
+          <button class="slajder__dugme slajder__dugme--sledece" type="button" aria-label="Sledeća slika">›</button>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="sekcija" id="zasto">
+      <div class="kontejner">
+        <header class="sekcija__zaglavlje">
+          <h2>Tura puna ukusa, mirisa i emocija</h2>
+          <p>Šta vas očekuje tokom „Taste of Island“ doživljaja?</p>
+        </header>
+
+        <div class="mreza usluge-mreza">
+          <article class="kartica usluge-kartica otkrivanje">
+            <img class="usluge-kartica__slika" src="assets/img/deca.jpg" alt="deca">
+            <div class="usluge-kartica__telo">
+              <h3 class="usluge-kartica__naslov" style="text-align: center;">👨‍👩‍👧‍👦 Tura prilagođena porodicama i deci</h3>
+              <p class="usluge-kartica__tekst" style="text-align: center;">Naša tura može biti edukativna i zabavna za najmlađe.
+Deca imaju priliku da upoznaju svet pčela, saća i meda kroz jednostavna objašnjenja, pitanja i praktične prikaze.
+Tempo obilaska prilagođavamo porodicama — bez žurbe, sa pauzama, fotografisanjem i prostorom za radoznalost.
+Ako dolazite sa decom, samo nam to naglasite — osmislimo iskustvo koje će im ostati u sećanju.</p>
+            </div>
+          </article>
+
+          <article class="kartica usluge-kartica otkrivanje">
+            <img class="usluge-kartica__slika" src="assets/img/grupna-tura.webp" alt="Upoznajte svet pčela">
+            <div class="usluge-kartica__telo">
+              <h3 class="usluge-kartica__naslov" style="text-align: center;" > 👥 Za veće grupe — po dogovoru</h3> <br>
+              <p class="usluge-kartica__tekst" style="text-align: center;">Standardno radimo privatne ture za do 8 osoba, kako bismo zadržali intimnu i toplu atmosferu.
+Međutim, po prethodnom dogovoru možemo organizovati i ture za veće grupe — porodice, prijatelje, tim building, posebne događaje.
+Organizacija, dinamika i degustacije prilagođavaju se broju gostiju, tako da iskustvo ostane kvalitetno i prijatno za sve</p>
+            </div>
+          </article>
+
+          <article class="kartica usluge-kartica otkrivanje">
+            <img class="usluge-kartica__slika" src="assets/img/prilagodjena-tura.webp" alt="prilagodjena-tura">
+            <div class="usluge-kartica__telo">
+              <h3 class="usluge-kartica__naslov" style="text-align: center;">♿ Pristupačno i prilagođeno</h3> <br> 
+              <p class="usluge-kartica__tekst" style="text-align: center;">Tura se može prilagoditi osobama sa smanjenom pokretljivošću ili posebnim potrebama.
+Ukoliko je potrebno sporije kretanje, dodatne pauze, drugačiji pristup degustaciji ili logistička prilagođavanja — unapred nas obavestite.
+Naš cilj je da se svako oseća dobrodošlo, bez stresa i nelagodnosti.
+Autentičnost je važna, ali još važnije je da se svako oseća kao gost — a ne kao izuzetak.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="podnozje">
+    <div class="kontejner podnozje__red">
+      <span>“…tako je to nekad bilo”</span>
+      <p>© <span id="year"></span> Taste of Island</p>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </footer>
+
+  <script src="js/theme-fab.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/slider.js" defer></script>
+
+</body>
+</html>

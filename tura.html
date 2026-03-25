@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tura | Taste of the Island</title>
+
+  <meta name="description" content="Taste of Island je turistička tura koja spaja lokalnu hranu, prirodu i autentična iskustva. Pogledaj programe i rezerviši svoje mesto." />
+  <meta name="keywords" content="Hvar, Brusje, med, lavanda, maslinovo ulje, degustacija, Napoleon, Stari Grad
+  privatna tura, Taste of the Island, honeytasting, konoba, liker, medica, Mikletovi, Katja i Aleksa">
+  <meta name="author" content="Taste of the Island">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/tura.css">
+  <link rel="stylesheet" href="css/kontakt.css">
+</head>
+
+<body>
+
+<button class="tema-fab" type="button" aria-label="Promeni temu" title="Promeni temu">
+  <span class="tema-fab__ikona" aria-hidden="true">🌙</span>
+</button>
+
+<header class="zaglavlje">
+    <div class="kontejner zaglavlje__red">
+      <a class="brend" href="index.html" aria-label="Taste of Island - početna">
+        <img src="assets/icons/logo.svg" alt="Taste of Island logo" width="44" height="44" />
+        <span class="brend__tekst">Taste of Island</span>
+      </a>
+
+      <nav class="navigacija" aria-label="Glavna navigacija">
+
+        <button class="navigacija__prekidac" type="button" aria-expanded="false" aria-controls="navMenu">
+          ☰
+          <span class="samo-za-ekran">Otvori meni</span>
+        </button>
+
+        <ul class="navigacija__meni" id="navMenu">
+          <li><a class="navigacija__link" href="index.html">Početna</a></li>
+
+          <li class="navigacija__padajuci">
+            <button class="navigacija__link navigacija__dugme" type="button" aria-expanded="false">
+              O nama ▾
+            </button>
+            <ul class="navigacija__padajuciMeni">
+              <li><a class="navigacija__link is-active" href="tura.html">Tura</a></li>
+              <li><a class="navigacija__link" href="domacini.html">Domaćini</a></li>
+              <li><a class="navigacija__link" href="proizvodi.html">Proizvodi</a></li>
+            </ul>
+          </li>
+
+          <li><a class="navigacija__link" href="galerija.html">Galerija</a></li>
+          <li><a class="navigacija__link" href="kontakt.html">Kontakt</a></li>
+
+          <li class="nav__controls">
+            <button id="fontBtn" class="dugme dugme--providno" type="button">Povećaj font</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="tura-hero py-5">
+    <div class="kontejner">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="badge rounded-pill text-bg-light border tura-znacka">
+            Privatno iskustvo • 1–8 osoba
+          </span>
+
+          <h1 class="display-5 fw-bold mt-3">Tura puna ukusa, mirisa i emocija</h1>
+
+          <p class="lead mt-3">
+            “Taste of the Island” je doživljaj Hvara kroz panorame, autentičnu porodičnu priču i degustacije
+            meda, lavande, maslinovog ulja i domaćih rakija.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <a href="#itinerary" class="dugme">Plan ture</a>
+
+            <button class="dugme dugme-kontura"
+                    data-bs-toggle="modal" data-bs-target="#reserveModal">
+              Rezerviši
+            </button>
+          </div>
+
+          <div class="row g-2 mt-4">
+            <div class="col-6 col-md-4">
+              <div class="mini-oznaka">
+                <div class="mini-etiketa">Trajanje</div>
+                <div class="mini-vrednost">2h/3h/4h/5h</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="mini-oznaka">
+                <div class="mini-etiketa">Prevoz</div>
+                <div class="mini-vrednost">Komforno vozilo</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="mini-oznaka">
+                <div class="mini-etiketa">Uključeno</div>
+                <div class="mini-vrednost">Vodič + degustacije</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-kolaz">
+            <img class="k1" src="assets/img/grupna-tura.webp" alt="Grupa">
+            <img class="k2" src="assets/img/gosti.jpg" alt="Brusje i tradicija">
+            <img class="k3" src="assets/img/prilaz-posluzenje.webp" alt="Posluženje">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-4">
+    <div class="kontejner">
+      <div class="row g-3 text-center">
+        <div class="col-6 col-lg-3">
+          <div class="traka-stavka">Licencirani vodič</div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="traka-stavka">Degustacija 4+ ukusa</div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="traka-stavka">Autentična konoba</div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="traka-stavka">UNESCO pejzaži</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="py-5" id="itinerary">
+    <div class="kontejner">
+
+      <div class="text-center mb-4">
+        <h2 class="sekcija-naslov">Plan ture</h2>
+        <p class="sekcija-podnaslov mb-0">
+          Dinamiku prilagođavate vi — mi dajemo najbolje tačke, priču i ukuse.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card tura-kartica h-100 shadow-sm">
+            <img src="assets/img/napoleon.jpeg" class="card-img-top" alt="Napoleonova tvrđava">
+            <div class="card-body">
+              <div class="tura-korak">Stop 01</div>
+              <h5 class="card-title">Napoleonova tvrđava</h5>
+              <p class="card-text">Pogled koji oduzima dah i savršen uvod u istoriju i život ostrva.</p>
+              <ul class="tura-lista">
+                <li>Panorama grada Hvara</li>
+                <li>Kratka priča o ostrvu</li>
+                <li>Foto trenutak</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tura-kartica h-100 shadow-sm">
+            <img src="assets/img/stare-slike.jpg" class="card-img-top" alt="Selo Brusje">
+            <div class="card-body">
+              <div class="tura-korak">Stop 02</div>
+              <h5 class="card-title">Brusje & porodična konoba</h5>
+              <p class="card-text">U kući staroj više od jednog veka, dobijate osećaj kao da ste zakoračili u “nekad”.</p>
+              <ul class="tura-lista">
+                <li>Autentičan enterijer & porodične fotografije</li>
+                <li>Priča o tradiciji pčelarstva</li>
+                <li>Toplina doma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tura-kartica h-100 shadow-sm">
+            <img src="assets/img/mala-pakovanja.jpg" class="card-img-top" alt="Degustacija">
+            <div class="card-body">
+              <div class="tura-korak">Stop 03</div>
+              <h5 class="card-title">Degustacije: med, rakije, ulje</h5>
+              <p class="card-text">Probajte različite ukuse ostrva i saznajte kako nastaju — od košnice do stola.</p>
+              <ul class="tura-lista">
+                <li>Vrste meda (sezonski)</li>
+                <li>Cvetni prah (polen)</li>
+                <li>Rakije: medica, mirta, rogač, travarica</li>
+                <li>Maslinovo ulje: tradicionalno i moderno</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tura-kartica h-100 shadow-sm">
+            <img src="assets/img/lavanda-polja.webp" class="card-img-top" alt="Lavandina polja">
+            <div class="card-body">
+              <div class="tura-korak">Stop 04</div>
+              <h5 class="card-title">Lavandina polja</h5>
+              <p class="card-text">
+                Polja lavande i suhozidi pod zaštitom UNESCO-a — rad ručno, srpom,
+                baš kao nekada.
+              </p>
+              <ul class="tura-lista">
+                <li>Priča o ručnoj berbi</li>
+                <li>Alati i način transporta nekada</li>
+                <li>Destilacija ulja</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tura-kartica h-100 shadow-sm">
+            <img src="assets/img/roko.jpg" class="card-img-top" alt="Vidikovac Sv. Roko">
+            <div class="card-body">
+              <div class="tura-korak">Stop 05</div>
+              <h5 class="card-title">Vidikovac Sv. Roko</h5>
+              <p class="card-text">
+                Savršen pogled na Stari Grad i UNESCO polje Hora —
+                jedno od najlepših mesta za fotografije na ostrvu.
+              </p>
+              <ul class="tura-lista">
+                <li>Panorama Starog Grada</li>
+                <li>UNESCO Hora polje</li>
+                <li>Foto pauza</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card tura-kartica h-100 shadow-sm">
+            <img src="assets/img/tvrdalj-ph.jpg" class="card-img-top" alt="Stari Grad">
+            <div class="card-body">
+              <div class="tura-korak">Stop 06</div>
+              <h5 class="card-title">Stari Grad</h5>
+              <p class="card-text">
+                Najstariji grad na ostrvu — mirna šetnja kamenim ulicama,
+                mogućnost posete Tvrdalju Petra Hektorovića i ručka.
+              </p>
+              <ul class="tura-lista">
+                <li>Istorijsko jezgro</li>
+                <li>Tvrdalj (opciono)</li>
+                <li>Moguć ručak ili vinarija</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-5">
+        <div class="accordion" id="infoAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#infoOne"
+                      aria-expanded="true" aria-controls="infoOne">
+                Praktične informacije
+              </button>
+            </h2>
+            <div id="infoOne" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+              <div class="accordion-body">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="mini">
+                      <div class="mini-title">Trajanje</div>
+                      <div class="mini-text">2h/3h/4h/5h (po dogovoru)</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mini">
+                      <div class="mini-title">Broj osoba</div>
+                      <div class="mini-text">Privatno • najčešće do 8 osoba (po dogovoru i više)</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mini">
+                      <div class="mini-title">Uključeno</div>
+                      <div class="mini-text">Vodič + degustacije + voda</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mini">
+                      <div class="mini-title">Nije uključeno</div>
+                      <div class="mini-text">Ručak, ulaznice, napojnice, lična kupovina</div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+
+                <h5 class="mb-2">Cena</h5>
+                <p class="mb-0">
+                  Cena se formira prema trajanju i broju osoba. U praksi najčešće radimo fleksibilno (po dogovoru),
+                  jer gosti vole da sami kroje tempo. Tačnu ponudu dobijate nakon upita.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#infoTwo">
+                FAQ — najčešća pitanja
+              </button>
+            </h2>
+            <div id="infoTwo" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+              <div class="accordion-body">
+                <div class="accordion" id="faqAccordion">
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Da li je tura prilagođena deci?
+                      </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        Da — tempo, pauze i sadržaj mogu biti prilagođeni porodicama i deci.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Da li je pogodna za osobe sa posebnim potrebama?
+                      </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        Jeste — samo nam unapred napišite šta je potrebno (sporije kretanje, pauze, logistika).
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#faq3">
+                        Može li više od 8 osoba?
+                      </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        Najčešće radimo do 8 osoba, ali po dogovoru možemo organizovati i veću grupu
+                        (porodice, prijatelji, tim building), uz prilagođenu organizaciju.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <section class="tura-poziv mt-5">
+        <div class="row align-items-center g-3">
+          <div class="col-lg-8">
+            <h3 class="mb-1">Želite da krenete na turu istog minuta?</h3>
+            <p class="mb-0 text-muted">
+              Pošaljite upit — predložićemo najbolju rutu i organizovati sve oko vas.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <button class="dugme dugme-tamno"
+                    data-bs-toggle="modal" data-bs-target="#reserveModal">
+              Rezerviši sada
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="modal fade" id="reserveModal" tabindex="-1" aria-labelledby="reserveModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="reserveModalLabel">Rezerviši svoj termin</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+        </div>
+
+        <div class="modal-body">
+          <p class="text-muted mb-4">
+            Pošaljite upit i javljamo se brzo sa predlogom ture i cenom.
+          </p>
+
+          <form class="kontakt__forma" action="#" method="post" autocomplete="on" novalidate>
+
+            <div class="kontakt__red">
+              <div class="kontakt__polje">
+                <label for="name">Ime i prezime *</label>
+                <input type="text" id="name" name="name" placeholder="Petar Petrović" required>
+                <div class="greska-polja" data-error-for="name"></div>
+              </div>
+
+              <div class="kontakt__polje">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="user@gmail.com" required>
+                <div class="greska-polja" data-error-for="email"></div>
+              </div>
+            </div>
+
+            <div class="kontakt__red">
+              <div class="kontakt__polje">
+                <label for="phone">Telefon (opciono)</label>
+                <input type="tel" id="phone" name="phone" placeholder="+381 6x xxx xxxx">
+                <div class="greska-polja" data-error-for="phone"></div>
+              </div>
+
+              <div class="kontakt__polje">
+                <label for="people">Broj osoba *</label>
+                <input type="number" id="people" name="people" min="1" max="20" placeholder="1–8 (po dogovoru i više)" required>
+                <div class="greska-polja" data-error-for="people"></div>
+              </div>
+            </div>
+
+            <div class="kontakt__red">
+              <div class="kontakt__polje">
+                <label for="duration">Trajanje *</label>
+                <select id="duration" name="duration" required>
+                  <option value="" selected disabled>Izaberi</option>
+                  <option value="2h">2h</option>
+                  <option value="3h">3h</option>
+                  <option value="4h">4h</option>
+                  <option value="5h">5h</option>
+                </select>
+                <div class="greska-polja" data-error-for="duration"></div>
+              </div>
+
+              <div class="kontakt__polje">
+                <label for="date">Željeni datum *</label>
+                <input type="date" id="date" name="date" required>
+                <div class="greska-polja" data-error-for="date"></div>
+              </div>
+            </div>
+
+            <div class="kontakt__red">
+              <div class="kontakt__polje">
+                <label for="time">Preferirano vreme (opciono)</label>
+                <input type="time" id="time" name="time">
+                <div class="greska-polja" data-error-for="time"></div>
+              </div>
+
+              <div class="kontakt__polje">
+                <label for="extras">Dodatne želje (opciono)</label>
+                <select id="extras" name="extras">
+                  <option value="" selected>Ništa posebno</option>
+                  <option value="family">Dolazimo sa decom</option>
+                  <option value="access">Posebne potrebe / prilagođavanje</option>
+                  <option value="winery">Želimo posetu vinariji</option>
+                  <option value="museum">Želimo posetu muzeju</option>
+                  <option value="starigrad">Želimo šetnju Starim Gradom</option>
+                  <option value="group">Veća grupa (po dogovoru)</option>
+                </select>
+                <div class="greska-polja" data-error-for="extras"></div>
+              </div>
+            </div>
+
+            <div class="kontakt__polje">
+              <label for="message">Poruka (opciono)</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="Napišite šta biste voleli (tempo ture, posebne želje, hrana, vinarije...)"></textarea>
+              <div class="greska-polja" data-error-for="message"></div>
+            </div>
+
+            <div class="kontakt__provere">
+              <label class="provera">
+                <input type="checkbox" id="consent" name="consent" required>
+                <span>Slažem se da me kontaktirate u vezi upita (obavezno).</span>
+              </label>
+              <div class="greska-polja" data-error-for="consent"></div>
+            </div>
+
+            <button type="submit" class="dugme kontakt__dugme">Pošalji upit</button>
+          </form>
+
+          <div class="alert alert-info mt-4 mb-0" role="alert">
+            *Odgovaramo brzo — a turu možemo prilagoditi porodicama, posebnim potrebama i većim grupama (po dogovoru).
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="podnozje">
+    <div class="kontejner podnozje__red">
+      <span>“…tako je to nekad bilo”</span>
+      <p>© <span id="year"></span> Taste of Island</p>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/theme-fab.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/contact-validate.js"></script>
+
+</body>
+</html>
